@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --light-blue-100:#F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --dark-blue-200:#356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --White: #FFFFFF;
+}
+
+:root{
+    --type: "Inter", sans-serif; 
+    --type-weigth-title: 700;
+    --type-weigth-text: 400;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--light-blue-100);
+}
+
+main{
+    height: 100%;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+}
+
+.logo_alura{
+   padding-top: 40px ;
+   padding-top: 40px ;
+}
+
+.content{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 85%;
+    box-sizing: border-box;
+    padding: 56px 16px 0px 16px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    gap: 16px;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 75%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: var(--type);
+    font-size: 2rem;
+    font-weight:var(--type-weigth-text);
+    color: var(--dark-blue-300);
+}
+
+textarea::placeholder{
+    color: var(--dark-blue-300);
+}
+
+.input_rule{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--type);
+    color: var(--gray-400);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between
+}
+
+.button_criptografar{
+    width: 45%;
+    height: 67px;
+    border: none;
+    background-color: var(--dark-blue-300);
+    color: var(--White);
+    font-family: var(--type);
+    font-size: 1rem;
+    font-weight:var(--type-weigth-text);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.button_criptografar:hover{
+    background-color: var(--dark-blue-400);
+}
+
+
+.button_descriptografar{
+    width: 45%;
+    height: 67px;
+    border:  1px solid var(--dark-blue-300);
+    background-color: transparent;
+    color: var(--dark-blue-300);
+    font-family: var(--type);
+    font-size: 1rem;
+    font-weight:var(--type-weigth-text);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.button_descriptografar:hover{
+    background-color: var(--light-blue-200);
+}
+
+
+.output{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+.content_output{
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+
+.user_message{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px
+}
+
+.title_message_output{
+    font-family: var(--type);
+    font-weight: var(--type-weigth-title);
+    font-size: 1.5rem;
+    color: var(--gray-500);
+}
+
+.text_message_output{
+    font-family: var(--type);
+    font-weight:var(--type-weigth-text);
+    font-size: 1rem;
+    color: var(--gray-400);
+    line-height: 1.5rem;
+}
+
+.output_text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#output_text_content{
+    height: 80%;
+    text-align: left;
+    font-family: var(--type);
+    font-family: var(--type);
+    font-weight:var(--type-weigth-text);
+    font-size: 1.5rem;
+    color: var(--gray-400);
+   
+}
+
+.button_copiar{
+    width: 100%;
+    height: 67px;
+    border:  1px solid var(--dark-blue-300);
+    background-color: transparent;
+    color: var(--dark-blue-300);
+    font-family: var(--type);
+    font-size: 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue-200);
+    text-align: center;
+    height: 50px;
+}
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--White);
+    font-family: var(--type);
+    font-weight:var(--type-weigth-text);
+}
+
+.logo_linkdin{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Estilos específicos para telas menores, como smartphones */
+@media (max-width: 600px){
+
+   .header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+   }
+
+   .logo_alura{
+    padding: 16px;
+   }
+
+   .content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    gap: 64px;
+   }
+
+   .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .button_criptografar{
+        width: 100%;
+    }
+
+    .button_descriptografar{
+        width: 100%;
+    }
+
+    .output{
+        width: 100%;
+    }
+
+    .imagem_busca{
+        display: none;
+    }
+
+    .output_text{
+        gap: 16px;
+    }
+}
+
+
+/* Estilos específicos para tablets */
+@media (max-width: 900px){
+
+   .header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+   }
+
+   .logo_alura{
+    padding: 16px;
+   }
+
+   .content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    gap: 64px;
+   }
+
+   .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .button_criptografar{
+        width: 100%;
+    }
+
+    .button_descriptografar{
+        width: 100%;
+    }
+
+    .output{
+        width: 100%;
+    }
+
+    .imagem_busca{
+        display: none;
+    }
+
+    .output_text{
+        gap: 16px;
+    }
+}
