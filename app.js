@@ -52,7 +52,6 @@ function copiar() {
 }
 
 function mostrarMensagemInicial() {
-    document.querySelector('.imagem_busca').style.display = 'flex';
     document.querySelector('.title_message_output').style.display = 'flex';
     document.querySelector('.text_message_output').style.display = 'flex';
     document.querySelector('.output_text').style.display = 'none'; 
@@ -60,7 +59,6 @@ function mostrarMensagemInicial() {
 }
 
 function mostrarMensagemResultado() {
-    document.querySelector('.imagem_busca').style.display = 'none';
     document.querySelector('.title_message_output').style.display = 'none';
     document.querySelector('.text_message_output').style.display = 'none';
     document.querySelector('.output_text').style.display = 'flex'; 
