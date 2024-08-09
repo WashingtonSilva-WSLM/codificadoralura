@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Decodificador de texto</title>
+  <link rel="icon" href="./assets/Logo alura challenge - aba navegador v2.svg">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/global.css">
+</head>
+
+<body>
+  <main>
+    <div class="header_content">
+      <header>
+        <a href="/"><img src="./assets/Logo alura.svg" alt="Logo da empresa alura"></a>
+      </header>
+      <section class="content">
+        <div class="input">
+          <textarea id="input_text" placeholder="Digite seu texto "></textarea>
+          <div class="input_rule">
+            <img src="./assets/icone-exclamacao.svg" alt="Icone ponto de exclamação">
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="buttons">
+            <button onclick="criptografar()" class="button_criptografar">Criptografar</button>
+            <button onclick="descriptografar()" class="button_descriptografar">Descriptografar</button>
+          </div>
+        </div>
+        <div class="output">
+          <div class="content_output">
+            <img class="imagem_busca" src="./assets/Imagem__busca_.png"
+              alt="Imagem de um menino buscando vestígios em um diamante.">
+            <div class="user_message">
+              <h1 class="title_message_output">Nenhuma mensagem encontrada</h1>
+              <p class="text_message_output">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="output_text" style="display: none;">
+              <textarea id="output_text_content" readonly></textarea>
+              <button onclick="copiar()" class="button_copiar">Copiar</button>
+              <a class="button_refresh" href="/index.html">Criptografar novamente</a>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_content">
+      <a href="https://www.linkedin.com/in/wslm/" target="_blank"><img class="logo_linkdin"
+          src="./assets/linkedin white icon.png" alt=""></a>
+      <p>Washington Silva - 2024</p>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
