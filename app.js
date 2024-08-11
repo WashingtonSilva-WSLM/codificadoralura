@@ -61,6 +61,7 @@ function mostrarMensagemInicial() {
 function mostrarMensagemResultado() {
     document.querySelector('.title_message_output').style.display = 'none';
     document.querySelector('.text_message_output').style.display = 'none';
+    document.querySelector('.imagem_busca').style.display = 'none';
     document.querySelector('.output_text').style.display = 'flex'; 
 }
 
